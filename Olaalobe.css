@@ -65,7 +65,7 @@ body{
   height: 150px;
   margin-top: 10px;
 }
-@media(max-width: 600px) {
+@media(max-width: 200px) {
   .header{
     display: flex;
   }
