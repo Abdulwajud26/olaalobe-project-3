@@ -54,14 +54,11 @@ body{
   height: 150px;
   margin-top: 10px;
 }
-@media(max-width: 200px) {
+@media(max-width: 320px) {
   .super-container{
     grid-template-columns: 1fr;
     column-gap: 0px;
     margin-left: 30px;
-  }
-  .container2{
-    display: block;
   }
   .stuff1,
   .stuff2,
