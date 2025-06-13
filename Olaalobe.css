@@ -3,17 +3,6 @@ body{
   font-family: arial;
   font-size: 20px;;
 }
-.header{
-  display: inline-block;
-  background-color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
-  padding-left: 10px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
-}
 .super-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -66,9 +55,6 @@ body{
   margin-top: 10px;
 }
 @media(max-width: 200px) {
-  .header{
-    display: flex;
-  }
   .super-container{
     grid-template-columns: 1fr;
     column-gap: 0px;
