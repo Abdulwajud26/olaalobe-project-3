@@ -5,7 +5,7 @@ body{
 }
 .super-container{
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   column-gap: 200px;
   margin-left: 70px;
   margin-top: 100px;
@@ -54,11 +54,14 @@ body{
   height: 150px;
   margin-top: 10px;
 }
-@media(max-width: 100px) {
+@media(max-width: 200px) {
   .super-container{
     grid-template-columns: 1fr;
     column-gap: 0px;
     margin-left: 30px;
+  }
+  .container2{
+    display: block;
   }
   .stuff1,
   .stuff2,
