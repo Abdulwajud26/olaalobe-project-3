@@ -54,28 +54,74 @@ body{
   height: 150px;
   margin-top: 10px;
 }
-@media(min-device-width: 200px) {
+/* Responsive styles for tablets */
+@media (max-width: 1024px) {
   .super-container{
     grid-template-columns: 1fr;
     column-gap: 0px;
     margin-left: 30px;
+    margin-top: 60px;
   }
   .stuff1,
   .stuff2,
   .stuff5,
   .stuff6{
-    width: 400px;
+    width: 90vw;
+    max-width: 600px;
   }
-  .bios{
-    width: 300px;
-  }
-  .bios-corner{
-    margin-left: 30px;
-  }
-  .submit{
-    margin-left: 305px;
+  .stuff3,
+  .stuff4{
+    width: 90vw;
+    max-width: 300px;
   }
   .footer{
-    width: 1000px;
+    width: 100vw;
   }
 }
+
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+  body{
+    font-size: 16px;
+  }
+  .super-container{
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  .stuff1,
+  .stuff2,
+  .stuff5,
+  .stuff6{
+    width: 100vw;
+    max-width: 95vw;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  .stuff3,
+  .stuff4{
+    width: 95vw;
+    max-width: 95vw;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .footer{
+    width: 100vw;
+    height: auto;
+    padding: 20px 5px;
+    font-size: 14px;
+  }
+  .bios{
+    width: 90vw;
+    max-width: 300px;
+  }
+  .bios-corner{
+    margin-left: 0;
+  }
+  .submit{
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* Remove old min-device-width query and use max-width approach for better responsiveness */
